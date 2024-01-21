@@ -33,7 +33,7 @@ internal class Introspect
             types = schema.GetProperty("types"),
         }, opt));
 
-        Console.WriteLine("Writing introspect-resparsedult.json");
+        Console.WriteLine("Writing introspect-parsed.json");
         File.WriteAllText("introspect-parsed.json", JsonSerializer.Serialize(new
         {
             directives,

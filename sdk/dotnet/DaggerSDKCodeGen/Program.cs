@@ -8,6 +8,8 @@ if (args[0] == "introspect")
 
 if (args[0] == "codegen")
 {
-    CodeGen.RunAsync().Wait();
+    await CodeGen.RunAsync();
     return;
 }
+
+Console.WriteLine("Unknown command");
