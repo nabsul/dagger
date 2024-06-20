@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="StrawberryShake.Server" Version="13.8.1" />
+  </ItemGroup>
+
 </Project>

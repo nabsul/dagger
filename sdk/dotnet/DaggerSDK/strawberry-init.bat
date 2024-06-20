@@ -1,0 +1,2 @@
+for /f "delims=" %%a in ('powershell -Command "[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(\"%DAGGER_SESSION_TOKEN%\" + \":\"))"') do set ENCODED_VAR=%%a
+dotnet graphql init "http://localhost:%DAGGER_SESSION_PORT%/query" --token "%ENCODED_VAR%" --scheme Basic -n DaggerClient -p DaggerClient
